@@ -23,18 +23,19 @@ if ( isset($_GET['md5']) ) {
 	// first position in our "possible" pre-hash
 	// PIN
 	for($i=0; $i<strlen($digits); $i++ ) {
-		$ch1 = $digits[$i];   // Our first digit
+		$ch1 = $digits[$i];
 
-		// Our inner loop Not the use of new variables
-		// $j and $ch2 
+		// Our inner loop for the second digit
 		for($j=0; $j<strlen($digits); $j++ ) {
-			$ch2 = $digits[$j];  // Our second digit
+			$ch2 = $digits[$j];
 
+			// Inner loop for the third digit
 			for ($k = 0; $k < strlen($digits); $k++) {
-				$ch3 = $digits[$k];	// Our third digit
+				$ch3 = $digits[$k];
 
+				// Last inner loop for the fourth digit
 				for ($m = 0; $m < strlen($digits); $m++) {
-					$ch4 = $digits[$m];	// Our final digit
+					$ch4 = $digits[$m];
 
 					// Concatenate the four digits together to form the "possible" pre-hash text
 					$try = $ch1.$ch2.$ch3.$ch4;
@@ -74,7 +75,6 @@ if ( isset($_GET['md5']) ) {
 	<li><a href="index.php">Reset</a></li>
 	<li><a href="md5.php">MD5 Encoder</a></li>
 	<li><a href="makecode.php">MD5 Code Maker</a></li>
-	<li><a href="https://github.com/csev/wa4e/tree/master/code/crack" target="_blank">Source code for this application</a></li>
 </ul>
 </body>
 </html>
