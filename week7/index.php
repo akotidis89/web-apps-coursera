@@ -1,3 +1,13 @@
+<?php
+/*
+ * 	Filename: index.php
+ * 	Description: Assignment for week 7 of Web Apps Specialization
+ * 	Original author: Charles Severance
+ * 	Modified version: Anestis Kotidis
+ * 	Date: Monday, 18 March, 2019
+ */
+?>
+
 <!DOCTYPE html>
 <head><title>Anestis Kotidis MD5 Cracker</title></head>
 <body>
